@@ -182,12 +182,6 @@ ul {
 	grid-template-columns: 400px auto;
 	column-gap: 3rem;
 }
-.grid2 {
-	display: grid;
-	grid-column-start: span 3;
-	grid-template-columns: 300px auto;
-	column-gap: 2rem;
-}
 
 /*Charts*/
 
