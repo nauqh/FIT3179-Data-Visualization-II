@@ -123,6 +123,10 @@ ul {
 	background: linear-gradient(0deg, #178add, #03dcee);
 }
 
+.footer {
+	margin: 5rem 0;
+}
+
 /*Text Panel*/
 .text {
 	padding: 1rem;
