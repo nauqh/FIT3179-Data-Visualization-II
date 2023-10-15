@@ -11,6 +11,11 @@
     "data": {
         "url": "https://raw.githubusercontent.com/nauqh/FIT3179-Data-Visualization-II/main/data/netflix.csv"
     },
+    "title": {
+        "text": "Types of Entertaiment",
+        "color": "#fafafa",
+        "fontSize": 15
+    },
     "layer": [
         {
             "mark": {

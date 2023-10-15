@@ -20,7 +20,7 @@
     "title": {
         "text": "Movies Release by Year",
         "color": "#fafafa",
-        "fontSize": 20
+        "fontSize": 15
     },
     "mark": {
         "type": "bar",
