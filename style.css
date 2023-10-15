@@ -121,7 +121,7 @@ ul {
 	font-size: 2em;
 }
 
-/*Sales panel*/
+/*Stats panel*/
 .stats {
 	grid-column-start: span 3;
 	display: grid;
@@ -145,11 +145,7 @@ ul {
 
 /*Text Panel*/
 .text {
-	padding: 1em;
-}
-
-.text-vertical {
-	grid-row-start: span 2;
+	padding: 1rem;
 }
 
 .text-horizontal {
@@ -177,8 +173,6 @@ ul {
 	grid-template-columns: 400px auto;
 	column-gap: 3rem;
 }
-
-/*Charts*/
 
 #vgbar {
 	grid-column-start: span 3;
