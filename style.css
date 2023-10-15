@@ -136,10 +136,6 @@ ul {
 	grid-column-start: span 3;
 }
 
-.intro {
-	margin: 2rem 0;
-}
-
 .quote {
 	grid-column-start: span 3;
 	margin: 1rem 0;
