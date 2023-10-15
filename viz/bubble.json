@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega/v5.json",
-    "height": 350,
+    "height": 400,
     "width": 500,
     "signals": [
         {
@@ -71,8 +71,8 @@
                 "field": "amount"
             },
             "range": [
-                650,
-                6000
+                700,
+                7000
             ]
         },
         {
