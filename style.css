@@ -138,8 +138,7 @@ ul {
 
 .quote {
 	grid-column-start: span 3;
-	margin: 0.5rem 0;
-	padding: 0.5rem;
+	padding: 1rem;
 	font-size: 1.5rem;
 }
 
