@@ -1,0 +1,74 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple radial chart with embedded data.",
+    "background": "transparent",
+    "config": {
+        "view": {
+            "stroke": null
+        }
+    },
+    "data": {
+        "url": "../data/genres.csv"
+    },
+    "title": {
+        "text": "Movies Release by Year",
+        "color": "#fafafa",
+        "fontSize": 15
+    },
+    "transform": [
+        {
+            "filter": "datum.count > 500"
+        }
+    ],
+    "layer": [
+        {
+            "mark": {
+                "type": "arc",
+                "innerRadius": 40,
+                "stroke": "#fff"
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "radiusOffset": 25
+            },
+            "encoding": {
+                "text": {
+                    "field": "genres",
+                    "type": "nominal"
+                }
+            }
+        }
+    ],
+    "encoding": {
+        "theta": {
+            "field": "count",
+            "type": "quantitative",
+            "stack": true
+        },
+        "radius": {
+            "field": "count",
+            "scale": {
+                "type": "sqrt",
+                "zero": true,
+                "rangeMin": 50,
+                "rangeMax": 150
+            }
+        },
+        "color": {
+            "field": "genres",
+            "type": "nominal",
+            "legend": null
+        },
+        "order": {
+            "field": "count",
+            "type": "quantitative",
+            "sort": "descending"
+        },
+        "tooltip": {
+            "field": "count",
+            "type": "quantitative"
+        }
+    }
+}

@@ -25,73 +25,38 @@
                 the power to make you not feel lonely, even when you are."</p>
             <p style="text-align: right;">- Tom Hank</p>
         </div>
-        <div class="panel list">
-            <li>
-                <h2>Revenue</h2>
-                <span>Million of US $</span>
-            </li>
-            <li>
-                <h4>June</h4>
-                <span>8,187</span>
-            </li>
-            <li>
-                <h4>March</h4>
-                <span>8,162</span>
-            </li>
-            <li>
-                <h4>December, 2022</h4>
-                <span>7,852</span>
-            </li>
-            <li>
-                <h4>September, 2022</h4>
-                <span>7,926</span>
-            </li>
-            <li>
-                <h4>June, 2022</h4>
-                <span>7,970</span>
-            </li>
+
+        <div class="grid">
+            <div class="panel list">
+                <li>
+                    <h2>Revenue</h2>
+                    <span>Million of US $</span>
+                </li>
+                <li>
+                    <h4>June</h4>
+                    <span>8,187</span>
+                </li>
+                <li>
+                    <h4>March</h4>
+                    <span>8,162</span>
+                </li>
+                <li>
+                    <h4>December, 2022</h4>
+                    <span>7,852</span>
+                </li>
+                <li>
+                    <h4>September, 2022</h4>
+                    <span>7,926</span>
+                </li>
+                <li>
+                    <h4>June, 2022</h4>
+                    <span>7,970</span>
+                </li>
+            </div>
+            <div id="vggenres"></div>
         </div>
 
-        <div id="barChart"></div>
 
-        <div class="goals">
-            <div class="panel goal">
-                <span class="material-icons">
-                    check_circle
-                </span>
-                <div>
-                    <div class="goal-title">
-                        <h4>Movies</h4>
-                        <h4>5850</h4>
-                    </div>
-                    <small>Lorem ipsum dolor sit amet</small>
-                </div>
-            </div>
-            <div class="panel goal">
-                <span class="material-icons">
-                    check_circle
-                </span>
-                <div>
-                    <div class="goal-title">
-                        <h4>Average Minutes</h4>
-                        <h4>78</h4>
-                    </div>
-                    <small>Lorem ipsum dolor sit amet</small>
-                </div>
-            </div>
-            <div class="panel goal">
-                <span class="material-icons">
-                    check_circle
-                </span>
-                <div>
-                    <div class="goal-title">
-                        <h4>Total Minutes</h4>
-                        <h4>449,800</h4>
-                    </div>
-                    <small>Lorem ipsum dolor sit amet</small>
-                </div>
-            </div>
-        </div>
 
         <div id="scientificChart"></div>
 
@@ -118,7 +83,7 @@
             </div>
         </div>
 
-        <div class="flex">
+        <div class="grid">
             <div id="vgbubble"></div>
             <div class="panel text">
                 <h2>The Art of Cinema</h2>
@@ -205,6 +170,7 @@
         <div id="vgpie"></div>
 
         <div id="vgbar"></div>
+        <div id="vggenres"></div>
 
     </main>
 
@@ -217,6 +183,7 @@
         var specVis2 = "./viz/bar.json";
         var specVis3 = "./viz/pie.json";
         var specVis4 = "./viz/line.json";
+        var specVis5 = "./viz/genres.json";
 
         vegaEmbed('#vgbubble', specVis1, { "actions": false }).then(function (result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
@@ -231,6 +198,10 @@
         }).catch(console.error);
 
         vegaEmbed('#vgline', specVis4, { "actions": false }).then(function (result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        vegaEmbed('#vggenres', specVis5, { "actions": false }).then(function (result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
 
