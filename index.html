@@ -20,6 +20,10 @@
 
 <body>
     <main class="dashboard">
+
+        <div id="vgmap"></div>
+
+
         <div class="quote">
             <p>"Everybody has something that chews them up and, for me, that thing was always loneliness. Cinema has
                 the power to make you not feel lonely, even when you are."</p>
@@ -59,23 +63,19 @@
         <div class="sales">
             <div>
                 <h4>Movies</h4>
-                <h1>24</h1>
-                <small>6 days left</small>
+                <h1>5,850</h1>
             </div>
             <div>
                 <h4>Avg Minutes</h4>
                 <h1>$519k</h1>
-                <small>20% of plan</small>
             </div>
             <div>
                 <h4>Cast</h4>
                 <h1>73,251</h1>
-                <small>345 deals</small>
             </div>
             <div>
                 <h4>Directors</h4>
                 <h1>4,550</h1>
-                <small>19 last month</small>
             </div>
         </div>
 
@@ -179,6 +179,7 @@
         var specVis3 = "./viz/pie.json";
         var specVis4 = "./viz/line.json";
         var specVis5 = "./viz/genres.json";
+        var specVis = "./viz/map.json";
 
         vegaEmbed('#vgbubble', specVis1, { "actions": false }).then(function (result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
@@ -197,6 +198,10 @@
         }).catch(console.error);
 
         vegaEmbed('#vggenres', specVis5, { "actions": false }).then(function (result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        vegaEmbed('#vgmap', specVis, { "actions": false }).then(function (result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
 
