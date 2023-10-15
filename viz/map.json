@@ -7,6 +7,11 @@
             "stroke": null
         }
     },
+    "title": {
+        "text": "Movies Release by Year",
+        "color": "#fafafa",
+        "fontSize": 10
+    },
     "projection": {
         "type": "equalEarth"
     },
@@ -56,6 +61,7 @@
                     },
                     "legend": {
                         "orient": "right",
+                        "direction": "vertical",
                         "labelColor": "#fafafa",
                         "titleColor": "#fafafa",
                         "labelFontSize": 12
@@ -69,7 +75,8 @@
                         "scheme": "orangered"
                     },
                     "legend": {
-                        "orient": "top",
+                        "orient": "none",
+                        "direction": "vertical",
                         "labelColor": "#fafafa",
                         "titleColor": "#fafafa",
                         "labelFontSize": 12
