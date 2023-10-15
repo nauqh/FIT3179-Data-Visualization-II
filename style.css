@@ -33,31 +33,15 @@ ul {
 	padding: 0;
 }
 
-/* width */
-::-webkit-scrollbar {
-	width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-	background: #0c1839;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-	background: #6b6f8a;
-}
-
 /*===== Dashboard =====*/
 .dashboard {
 	display: grid;
 	background: #172042;
-	padding: 2em;
+	padding: 2rem;
 	grid-template-columns: 300px 300px 300px;
 	justify-content: center;
-	grid-gap: 2em;
-	top: 4.1em;
-	overflow-x: hidden;
+	grid-gap: 2rem;
+	top: 4rem;
 }
 
 .panel {
