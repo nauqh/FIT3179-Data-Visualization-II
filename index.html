@@ -169,7 +169,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-horizontal" id="vgchart-line"></div>
+        <div class="text-horizontal" id="vgline"></div>
 
         <div class="quote">
             <p>"Everybody has something that chews them up and, for me, that thing was always loneliness. Cinema has
@@ -187,15 +187,37 @@
                 in profit in the quarter, a similar number to last year at this time.</p>
         </div>
 
-        <div id="vgchart3"></div>
+        <div id="vgpie"></div>
 
-        <div id="vgchart2"></div>
+        <div id="vgbar"></div>
 
     </main>
 
     <script src='https://cdn.plot.ly/plotly-2.4.2.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
     <script src="./main.js"></script>
+
+    <script type="text/javascript">
+        var specVis1 = "./viz/bubble.json";
+        var specVis2 = "./viz/bar.json";
+        var specVis3 = "./viz/pie.json";
+        var specVis4 = "./viz/draft.json";
+
+        vegaEmbed('#vgbubble', specVis1, { "actions": false });
+
+        vegaEmbed('#vgbar', specVis2, { "actions": false }).then(function (result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        vegaEmbed('#vgpie', specVis3, { "actions": false }).then(function (result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        vegaEmbed('#vgline', specVis4, { "actions": false }).then(function (result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+    </script>
 </body>
 
 </html>
