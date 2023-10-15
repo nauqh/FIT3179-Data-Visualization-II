@@ -67,6 +67,40 @@ ul {
 	color: #ea335d;
 }
 
+/*Goal panel*/
+.goal {
+	padding: 1rem;
+}
+
+.goals,
+.goal,
+.goal-title {
+	display: flex;
+	align-items: center;
+}
+
+.goal-title h4:nth-child(1) {
+	margin: 0 2em 0 0;
+}
+
+.goal-title {
+	margin-bottom: 0.5em;
+}
+
+.goals {
+	flex-direction: column;
+}
+
+.goal {
+	margin: 1em 0;
+}
+
+.goal span {
+	color: #03dcee;
+	margin-right: 0.5em;
+	font-size: 2em;
+}
+
 /*Stats panel*/
 .stats {
 	grid-column-start: span 3;
@@ -98,10 +132,6 @@ ul {
 	grid-column-start: span 2;
 }
 
-.text-horizontal3 {
-	grid-column-start: span 3;
-}
-
 .quote {
 	grid-column-start: span 3;
 	padding: 1rem;
@@ -116,7 +146,7 @@ ul {
 }
 
 #vgbar {
-	grid-column-start: span 3;
+	grid-column-start: span 2;
 }
 
 @media screen and (max-width: 1000px) {
