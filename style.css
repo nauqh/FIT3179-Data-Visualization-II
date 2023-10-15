@@ -193,6 +193,11 @@ ul {
 	.dashboard {
 		grid-template-columns: 250px 250px 250px;
 	}
+
+	.grid {
+		grid-template-columns: 350px auto;
+		column-gap: 2rem;
+	}
 }
 
 @media screen and (min-width: 1000px) {
