@@ -60,26 +60,26 @@
                         ]
                     },
                     "legend": {
-                        "orient": "right",
+                        "orient": "left",
                         "direction": "vertical",
                         "labelColor": "#fafafa",
                         "titleColor": "#fafafa",
-                        "labelFontSize": 12
+                        "titleFontSize": 8
                     }
                 },
                 "color": {
                     "field": "runtime",
                     "type": "quantitative",
-                    "title": "Runtime",
+                    "title": "Time (min)",
                     "scale": {
                         "scheme": "orangered"
                     },
                     "legend": {
-                        "orient": "none",
+                        "orient": "right",
                         "direction": "vertical",
                         "labelColor": "#fafafa",
                         "titleColor": "#fafafa",
-                        "labelFontSize": 12
+                        "titleFontSize": 8
                     }
                 }
             }
