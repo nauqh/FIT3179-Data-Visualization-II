@@ -184,9 +184,6 @@ ul {
 }
 
 /*Charts*/
-#scientificChart {
-	grid-column-start: span 3;
-}
 
 #vgbar {
 	grid-column-start: span 3;
@@ -195,6 +192,12 @@ ul {
 @media screen and (max-width: 1000px) {
 	.dashboard {
 		grid-template-columns: 250px 250px 250px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	#vggenres {
+		margin-left: 5rem;
 	}
 }
 

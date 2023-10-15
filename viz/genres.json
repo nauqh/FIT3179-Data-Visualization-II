@@ -25,7 +25,9 @@
             "mark": {
                 "type": "arc",
                 "innerRadius": 40,
-                "stroke": "#fff"
+                "stroke": "#172042",
+                "strokeWidth": 2,
+                "tooltip": true
             }
         },
         {
@@ -65,10 +67,6 @@
             "field": "count",
             "type": "quantitative",
             "sort": "descending"
-        },
-        "tooltip": {
-            "field": "count",
-            "type": "quantitative"
         }
     }
 }
