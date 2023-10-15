@@ -11,7 +11,7 @@
         "url": "https://raw.githubusercontent.com/nauqh/FIT3179-Data-Visualization-II/main/data/genres.csv"
     },
     "title": {
-        "text": "Movies Release by Year",
+        "text": "Movies Genres",
         "color": "#fafafa",
         "fontSize": 15
     },
