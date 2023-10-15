@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	font-family: Helvetica, sans-sefif;
-	color: #fff;
+	color: #fafafa;
 	background: #172042;
 	min-height: 100vh;
 }
@@ -25,10 +25,6 @@ a {
 p {
 	color: #6b6f8a;
 	font-size: 0.9em;
-}
-
-small {
-	color: #6b6f8a;
 }
 
 ul {
