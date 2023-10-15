@@ -3,7 +3,7 @@
     "width": "container",
     "height": 350,
     "data": {
-        "url": "../data/netflix.csv"
+        "url": "./data/netflix.csv"
     },
     "background": "transparent",
     "config": {

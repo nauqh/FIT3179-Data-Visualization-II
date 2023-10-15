@@ -9,7 +9,7 @@
         }
     },
     "data": {
-        "url": "../data/netflix.csv"
+        "url": "./data/netflix.csv"
     },
     "layer": [
         {
