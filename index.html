@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    <script src="vega_lite_vis.js"></script>
+
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <main class="dashboard">
+        <div class="quote">
+            <p>"Everybody has something that chews them up and, for me, that thing was always loneliness. Cinema has
+                the power to make you not feel lonely, even when you are."</p>
+            <p style="text-align: right; color: #6b6f8a">- Tom Hank</p>
+        </div>
+        <div class="panel list">
+            <li>
+                <h2>Revenue</h2>
+                <span>Million of US $</span>
+            </li>
+            <li>
+                <h4>June</h4>
+                <span>8,187</span>
+            </li>
+            <li>
+                <h4>March</h4>
+                <span>8,162</span>
+            </li>
+            <li>
+                <h4>December, 2022</h4>
+                <span>7,852</span>
+            </li>
+            <li>
+                <h4>September, 2022</h4>
+                <span>7,926</span>
+            </li>
+            <li>
+                <h4>June, 2022</h4>
+                <span>7,970</span>
+            </li>
+        </div>
+
+        <div id="barChart"></div>
+
+        <div class="goals">
+            <div class="panel goal">
+                <span class="material-icons">
+                    check_circle
+                </span>
+                <div>
+                    <div class="goal-title">
+                        <h4>Movies</h4>
+                        <h4>5850</h4>
+                    </div>
+                    <small>Lorem ipsum dolor sit amet</small>
+                </div>
+            </div>
+            <div class="panel goal">
+                <span class="material-icons">
+                    check_circle
+                </span>
+                <div>
+                    <div class="goal-title">
+                        <h4>Average Minutes</h4>
+                        <h4>78</h4>
+                    </div>
+                    <small>Lorem ipsum dolor sit amet</small>
+                </div>
+            </div>
+            <div class="panel goal">
+                <span class="material-icons">
+                    check_circle
+                </span>
+                <div>
+                    <div class="goal-title">
+                        <h4>Total Minutes</h4>
+                        <h4>449,800</h4>
+                    </div>
+                    <small>Lorem ipsum dolor sit amet</small>
+                </div>
+            </div>
+        </div>
+
+        <div id="scientificChart"></div>
+
+        <div class="sales">
+            <div>
+                <h4>Movies</h4>
+                <h1>24</h1>
+                <small>6 days left</small>
+            </div>
+            <div>
+                <h4>Avg Minutes</h4>
+                <h1>$519k</h1>
+                <small>20% of plan</small>
+            </div>
+            <div>
+                <h4>Cast</h4>
+                <h1>73,251</h1>
+                <small>345 deals</small>
+            </div>
+            <div>
+                <h4>Directors</h4>
+                <h1>4,550</h1>
+                <small>19 last month</small>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div id="vgbubble"></div>
+            <div class="panel text">
+                <h2>The Art of Cinema</h2>
+                <small>lorem ipsum</small>
+                <p>Movies are a technological art, which is a boon for filmmakers—their art stands on the shoulders of
+                    industrial giants who made it possible to capture motion on film and video—as well as a severe
+                    challenge.</p>
+                <p>In recent years, great movies have been made with a varied range of devices, including consumer-grade
+                    video cameras, toy cameras, iPhones, and even pieced together from footage borrowed from the
+                    Internet.
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="goals">
+            <div class="panel goal">
+                <span class="material-icons">
+                    fingerprint
+                </span>
+                <div>
+                    <div class="goal-title">
+                        <h4>Privacy</h4>
+                    </div>
+                    <small>Lorem ipsum dolor sit amet</small>
+                </div>
+            </div>
+            <div class="panel goal">
+                <span class="material-icons">
+                    dashboard
+                </span>
+                <div>
+                    <div class="goal-title">
+                        <h4>Dashboard</h4>
+                    </div>
+                    <small>Lorem ipsum dolor sit amet</small>
+                </div>
+            </div>
+            <div class="panel goal">
+                <span class="material-icons">
+                    manage_accounts
+                </span>
+                <div>
+                    <div class="goal-title">
+                        <h4>Manage</h4>
+                    </div>
+                    <small>Lorem ipsum dolor sit amet</small>
+                </div>
+            </div>
+        </div>
+        <div class="text-horizontal" id="vgchart-line"></div>
+
+        <div class="quote">
+            <p>"Everybody has something that chews them up and, for me, that thing was always loneliness. Cinema has
+                the power to make you not feel lonely, even when you are."</p>
+            <p style="text-align: right; color: #6b6f8a">- Tom Hank</p>
+        </div>
+
+        <div class="panel text text-horizontal">
+            <h2>Netflix Revenues</h2>
+            <p>Netflix added millions of subscribers in the second quarter and saw a rise in revenue, the company said
+                on Wednesday in an upbeat earnings report that came at a moment when the entertainment industry is
+                dealing with dual strikes inspired in part by the economics of streaming.</p>
+            <p>Netflix added 5.9 million subscribers to bring its global total to 238 million. Its revenue rose 3
+                percent, to $8.2 billion, from the same period last year, and the company also said it had $1.5 billion
+                in profit in the quarter, a similar number to last year at this time.</p>
+        </div>
+
+        <div id="vgchart3"></div>
+
+        <div id="vgchart2"></div>
+
+    </main>
+
+    <script src='https://cdn.plot.ly/plotly-2.4.2.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

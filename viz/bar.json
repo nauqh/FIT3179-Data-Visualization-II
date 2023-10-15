@@ -1,0 +1,81 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": 350,
+    "data": {
+        "url": "../data/netflix.csv"
+    },
+    "background": "transparent",
+    "config": {
+        "axis": {
+            "domain": false,
+            "grid": false,
+            "ticks": false,
+            "labelColor": "#fafafa"
+        },
+        "view": {
+            "stroke": null
+        }
+    },
+    "title": {
+        "text": "Movies Release by Year",
+        "color": "#fafafa",
+        "fontSize": 20
+    },
+    "mark": "bar",
+    "transform": [
+        {
+            "filter": {
+                "timeUnit": "year",
+                "field": "release_year",
+                "range": [
+                    2000,
+                    2021
+                ]
+            }
+        }
+    ],
+    "encoding": {
+        "x": {
+            "timeUnit": "year",
+            "field": "release_year",
+            "type": "ordinal",
+            "axis": {
+                "title": null
+            }
+        },
+        "y": {
+            "aggregate": "count",
+            "type": "quantitative",
+            "axis": {
+                "title": null
+            }
+        },
+        "tooltip": {
+            "aggregate": "count",
+            "type": "quantitative"
+        },
+        "color": {
+            "field": "type",
+            "type": "nominal",
+            "scale": {
+                "domain": [
+                    "Movie",
+                    "TV Show"
+                ],
+                "range": [
+                    "#ea335d",
+                    "#03dcee"
+                ]
+            },
+            "legend": {
+                "orient": "top-left",
+                "labelColor": "#fafafa",
+                "titleColor": "#fafafa",
+                "title": "Type",
+                "labelFontSize": 12,
+                "titleFontSize": 14
+            }
+        }
+    }
+}

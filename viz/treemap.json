@@ -1,0 +1,21 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A tree map showing genres and their counts",
+    "data": {
+        "url": "../data/genres.csv"
+    },
+    "mark": {
+        "type": "rect",
+        "tooltip": true
+    },
+    "encoding": {
+        "color": {
+            "field": "genres",
+            "type": "nominal"
+        },
+        "size": {
+            "field": "count",
+            "type": "quantitative"
+        }
+    }
+}

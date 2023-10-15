@@ -1,0 +1,77 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 250,
+    "height": 250,
+    "background": "transparent",
+    "config": {
+        "view": {
+            "stroke": null
+        }
+    },
+    "data": {
+        "url": "../data/netflix.csv"
+    },
+    "layer": [
+        {
+            "mark": {
+                "type": "arc",
+                "innerRadius": 50,
+                "stroke": "#172042",
+                "strokeWidth": 2,
+                "tooltip": true
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "radiusOffset": 10
+            },
+            "encoding": {
+                "text": {
+                    "value": "Proportion %"
+                },
+                "color": {
+                    "value": "#fafafa"
+                }
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "radius": 90
+            },
+            "encoding": {
+                "text": {
+                    "field": "type",
+                    "type": "nominal"
+                },
+                "color": {
+                    "value": "#fafafa"
+                }
+            }
+        }
+    ],
+    "encoding": {
+        "theta": {
+            "field": "type",
+            "aggregate": "count",
+            "type": "quantitative",
+            "stack": true
+        },
+        "color": {
+            "field": "type",
+            "type": "nominal",
+            "scale": {
+                "domain": [
+                    "Movie",
+                    "TV Show"
+                ],
+                "range": [
+                    "#ea335d",
+                    "#03dcee"
+                ]
+            },
+            "legend": null
+        }
+    }
+}
